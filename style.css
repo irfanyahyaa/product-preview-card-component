@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 50px 50px;
+    background-color: #EAE7B1;
+    font-size: 18px;
+    font-family: "poppins";
+}
+
+.product-card {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "img title title"
+    "img name name"
+    "img desc desc"
+    "img price price"
+    "img cart cart";
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    box-shadow: 0 0 20px black;
+}
+
+.product-img {
+    background-image: url(img/product.jpeg);
+    grid-area: img;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-desc h5 {
+    grid-area: title;
+    margin: 15px 15px 0px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: rgb(155, 153, 117);
+}
+
+.product-desc h4 {
+    grid-area: name;
+    margin: 15px 15px 0;
+    font-family: "lora";
+    font-size: 2rem;
+    color: rgb(60, 60, 60);
+}
+
+.product-desc p {
+    grid-area: desc;
+    margin: 15px 15px 0px;
+    color: rgb(107, 106, 80);
+    letter-spacing: .3px;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.price-detail {
+    grid-area: price;
+    margin: 15px 15px 0;
+    display: grid;
+    grid-template-areas: "disc real";
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.price-detail .disc {
+    margin: 0;
+    grid-area: disc;
+    font-size: 2rem;
+    font-family: "lora";
+    font-weight: bold;
+    color: #61876E;
+}
+
+.price-detail .price {
+    margin: auto 20px;
+    grid-area: real;
+    color: #61876E;
+    text-decoration: line-through;
+}
+
+button {
+    margin: 15px 15px;
+    width: 88%;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: #61876E;
+    letter-spacing: .5px;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity .3s;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:active {
+    background-color: #3C6255;
+}
+
+button img {
+    width: 14px;
+    margin-right: 5px;
+}
+
+button .icon {
+    display: inline-block;
+    margin-right: 5px;
+}
