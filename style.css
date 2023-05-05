@@ -15,7 +15,7 @@ body {
 }
 
 .product-card {
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
@@ -24,6 +24,7 @@ body {
     grid-template-areas: 
     "img title title"
     "img name name"
+    "img desc desc"
     "img desc desc"
     "img price price"
     "img cart cart";
@@ -40,7 +41,7 @@ body {
 
 .product-desc h5 {
     grid-area: title;
-    margin: 15px 15px 0px;
+    margin: 25px 25px 0px;
     letter-spacing: 2px;
     font-weight: normal;
     color: rgb(155, 153, 117);
@@ -48,7 +49,7 @@ body {
 
 .product-desc h4 {
     grid-area: name;
-    margin: 15px 15px 0;
+    margin: 25px 25px 0;
     font-family: "lora";
     font-size: 2rem;
     color: rgb(60, 60, 60);
@@ -56,7 +57,7 @@ body {
 
 .product-desc p {
     grid-area: desc;
-    margin: 15px 15px 0px;
+    margin: 25px 25px 0px;
     color: rgb(107, 106, 80);
     letter-spacing: .3px;
     font-size: 14px;
@@ -65,7 +66,7 @@ body {
 
 .price-detail {
     grid-area: price;
-    margin: 15px 15px 0;
+    margin: 25px 25px 0;
     display: grid;
     grid-template-areas: "disc real";
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -88,7 +89,7 @@ body {
 }
 
 button {
-    margin: 15px 15px;
+    margin: 25px 25px;
     width: 88%;
     height: 40px;
     border-radius: 10px;

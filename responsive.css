@@ -1,0 +1,12 @@
+@media (max-width: 720px) {
+    .product-card {
+        display: flex;
+        overflow: visible;
+        flex-direction: column;
+    }
+    
+    .product-img {
+        display: block;
+        height: 300px;
+    }
+}
